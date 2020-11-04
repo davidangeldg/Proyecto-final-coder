@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="David Angel, designer, diseñador, design, diseño, graphic designer, diseñador grafico, from colombia, de colombia, design art, front end developer, desarrollador front end, diseño grafico bogota, front end developer bogota, branding corporativo, contact, contacto">
+    <meta name="description" content="Soy Diseñador grafico y Front end Developer de Colombia para el mundo.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- HOJA DE ESTILOS PROPIA -->
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <title>Contacto-David Angel DG</title>
+  </head>
+  <body>
+    <!--encabezado sitio-->
+    <header>
+      <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo"><img src="../img/LogoDA-white.svg" alt="logo"></div>
+        <ul class="links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="sobremi.html">Sobre mi</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burguer">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+      </nav>
+    </header>
+    <!--seccion cuerpo-->
+    <section>
+      <div class="bannerContacto">
+        <h1 class="titulo__contacto animate__animated animate__flipInX">CONTACTO</h1>
+      </div>
+      <h2 class="container__titulo">TRABAJEMOS JUNTOS</h2>
+      <p class="parrafo">david_angel94@hotmail.com <br> cel: 3108530810</p>
+    </section>
+      <!-- Bootstrap form -->
+    <main class="container__imgForm">
+        <section>
+          <img src="../img/contact.jpg" alt="">
+        </section>
+        <section class="container formulario formulario">
+          <legend>Datos personales</legend>
+          <form>
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control form-control-lg" placeholder="Nombre">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control form-control-lg" placeholder="Apellidos">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email</label>
+              <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="tucorreo@example.com">
+            </div>
+            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Tipo de consulta</label>
+            <select class="custom-select my-1 mr-sm-2 form-control-lg" id="inlineFormCustomSelectPref">
+              <option selected>Selecciona</option>
+              <option value="1">Servicios</option>
+              <option value="2">Peticiones</option>
+              <option value="3">Sugerencias</option>
+            </select>
+            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+              <input type="checkbox" class="custom-control-input form-control-lg" id="customControlInline">
+              <label class="custom-control-label" for="customControlInline">Recuerda mi elección</label>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Mensaje</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div>
+              <input type="submit" name="enviar" value="Enviar" class="verMas">
+              <button type="button" value="Limpiar datos" class="btn verMas" data-toggle="modal" data-target="#exampleModal">
+                Limpiar
+              </button>
+              <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Advertencia</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ¿Esta seguro que desea borrar los datos?
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                        <button type="button reset"  value="Limpiar datos" class="btn btn-primary">Sí</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </form>
+        </section>
+    </main>
+    <!--seccion footer-->
+   <footer class="footer">
+      <div class="footer__container">
+          <div class="linksFooter">
+              <ul>
+                  <li><a href="../index.html" class="aFooter">Inicio</a></li>
+                  <li><a href="../html/servicios.html" class="aFooter">Servicios</a></li>
+                  <li><a href="../html/proyectos.html" class="aFooter">Proyectos</a></li>
+                  <li><a href="../html/sobremi.html" class="aFooter">Sobre mi</a></li>
+                  <li><a href="../html/contacto.html" class="aFooter">Contacto</a></li>
+              </ul>
+          </div>
+          <div class="redesSociales">
+              <ul>
+                  <li><a href="http://www.behance.net/dangel94" class="aFooter"><i class="fab fa-2x fa-behance"></i></a></li>
+                  <li><a href="https://www.twitter.com/Davidangel94" class="aFooter"><i class="fab fa-2x fa-twitter"></i></a></li>
+                  <li><a href="http://www.instagram.com" class="aFooter"><i class="fab fa-2x fa-instagram"></i></a></li>
+              </ul>
+          </div>
+          <p class="parrafo">© Copyrigth 2020 - David Angel DG</p>
+      </div> 
+   </footer>
+   <!-- ICONOS REDES -->
+   <script src="https://kit.fontawesome.com/c4833cb261.js" crossorigin="anonymous"></script>
+   <!-- JS BOOTSTRAP -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
