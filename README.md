@@ -2,4 +2,4 @@
 
 David Angel DG - coderhouse
 
-este el el proyecto final para el curso de desarrollo web de Coderhouse, el cual es acerda de mi página web-portfolio
+este el el proyecto final para el curso de desarrollo web de Coderhouse, el cual es acerca de mi página web-portfolio
