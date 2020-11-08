@@ -6,7 +6,7 @@ David Angel DG - coderhouse
 En este repositorio se encuentra el proycto final del curso "Desarrollo web" de Coder House, el cual es acerca de mi página web-portfolio
 Este sitio fue creado utilizando el principio mobile first, por lo cual es totalmente responsive.
 
-# En la rama master van a encontrar los archivos principales con los que está construido el sitio:
+<strong>En la rama master van a encontrar los archivos principales con los que está construido el sitio:</strong>
 
 1. La carpeta css contiene los archivos que se usaron para crear el estilos de la página.
 2. La carpeta img contiene todas las imagenes .jpg y los iconos svg utilizados en el sitio.
