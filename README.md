@@ -15,11 +15,11 @@ Este sitio fue creado utilizando el principio mobile first, por lo cual es total
 5. La carpeta wireframes contiene los wireframes de la idea original del sitio.
 6. en el package.jason van a encontrar las dependencias del proyecto como asi también una breve descripción del mismo.
 7. El index.html es su página principal.
-8. Agregué la pagina error 404, que esta habilitada en el host done subí mi sitio(000webhost), modifiqué el archivo .htaccess colocandole al mismo la linea de codigo  ErrorDocument 404 /pages/404.html
+8. Agregué la pagina error 404, que esta habilitada en el host done subí mi sitio(000webhost), modifiqué el archivo .htaccess colocandole al mismo la linea de codigo  ErrorDocument 404 /html/404.html
 
 
 - Link del sitio en Github Pages:
-https://github.com/davidangeldg/Proyecto-final-coder
+https://davidangeldg.github.io/Proyecto-final-coder/
 
 <hr>
 
