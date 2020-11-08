@@ -113,6 +113,7 @@ nav{
     text-align: center;
     margin-bottom: 10%;
     transition: all 2s ease;
+    box-sizing: border-box;
     &::before {
         content: "";
         display: block;
@@ -151,7 +152,9 @@ nav{
     }
     &:hover{
         transition: all 0.8s;
-        transform: scale(1.05);
+        h3 {
+            transform: scale(1.05);
+        }
         .container__saludo {
             transition: all 1s;
             transform: scale(1.2)  translate(-25px, -15px);
@@ -547,6 +550,7 @@ nav{
 }
 .container__sobremi {
     @include soloflex;
+    overflow: hidden;
     .img__sobremi {
         width: 30%;
         height: auto;
@@ -749,7 +753,7 @@ legend {
             padding: 0;
             li{
                 list-style: none;
-                padding: 0 1em; 
+                padding: 0; 
                 height: 3rem;
                 width: 3rem;
                 a{
@@ -770,7 +774,53 @@ legend {
 @media (min-width: 1001px) {
     .container3 {
         display: none;
+    }  
+}
+@media (min-width: 801px) and (max-width: 1024px) {
+    //proyectos
+    .light-box, .light-box2 {
+        img{
+            width: 80vw;
+        }
     }
+    .light-box3 {
+        img {
+            width: 70vw;
+        }
+    }
+    //sobremi
+    .container__sobremi{
+        overflow: hidden;
+        .img__sobremi{
+            width: 40%;
+        }
+        .parrafo__About{
+            width: 60%;
+            padding: 1rem 3rem;
+        }
+    }
+}    
+@media screen and (max-width: 800px) {
+    .container__imgForm {
+        flex-flow: column wrap;
+        section{
+            width: 100%;
+            img {
+                height: 200px;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .footer {
+        .redesSociales{ 
+            ul{
+                justify-content: space-evenly;
+                width: 50%;
+                padding: 0;
+            }
+        }
+    }  
 }
 @media screen and (max-width: 768px) {
     nav {
@@ -819,6 +869,43 @@ legend {
             opacity: 0;
         }
     }
+    .container__index {
+        height: 250px;
+        &::before {
+            width: 90%;
+        }
+        .container__saludo, .container__bienvenidos{
+            font-size: 3rem; 
+        }
+        .container__saludo {
+            position: relative;
+            right: 35%;
+            top: 25px;
+        }
+        .container__bienvenidos {
+            position: relative;
+            width: 60%;
+            left: 40%;
+            top: -25px;
+        }
+        h3 {
+            font-size: 7.8rem;
+        }
+        &:hover{
+            .container__saludo {
+                transform: scale(1.2)  translate(-25px, -15px);
+            }
+            .container__bienvenidos {
+                transform: scale(1.2)  translate(22px, 15px);
+            }
+        }
+    }
+    .sect{
+        padding-top: 1rem;
+    }
+    .none{
+        display: none;
+    }
     .caja{
         display: flex;
         width: 98%;
@@ -828,31 +915,184 @@ legend {
         width: auto;
         margin: 0.5%;
     }
- 
-}
-@media screen and (max-width: 800px) {
-    .container__imgForm {
-        flex-flow: column wrap;
-        section{
+    // servicios
+    .cajaflex{
+        h3{
+            justify-content: center;
+        }
+        h4{
             width: 100%;
+            justify-content: center;
+        }
+        p{
+            padding: 2rem 1rem;
+        }
+    }
+    #comotrabajo {
+        &::before {
+            width: 90%;
+        }
+        .titulo {
+            padding-bottom: 2rem;
+        }
+    }
+    //Proyectos
+    .light-box {
+        img{
+            width: 90vw;
+        }
+    }
+    .light-box2 {
+        img{
+            width: 75vw;
+        }
+    }
+    .light-box3 {
+        img{
+            width: 70vw;
+        }
+    }
+    //sobremi
+    .titulo__sobremi{
+        font-size: 4.5rem;
+    }
+    .container__sobremi{
+        flex-direction: column;
+        overflow: hidden;
+        .img__sobremi{
+            width: 70%;
+        }
+        .parrafo__About{
+            width: 90%;
+            padding: 1rem 0;
+        }
+        .none{
+            display: block;
+        }
+    }
+    //contacto
+    .container__imgForm {
+        margin: 0;
+        padding: 2rem .5rem;
+        &::before{
+            width: 90%;
+        }
+        section{
+            width: 95%;
+        }
+    }
+}
+@media (min-width: 530px) and (max-width: 768px) {
+    .container__imgForm {
+        section{
             img {
-                height: 200px;
-                margin-bottom: 2rem;
+                height: 300px;
             }
         }
     }
-
-    .footer {
-        .redesSociales{ 
-            ul{
-                justify-content: space-evenly;
-                width: 50%;
-                padding: 0;
+}
+@media (min-width: 411px) and (max-width: 414px) {
+    .container__index {
+        height: 200px;
+        &::before {
+            width: 90%;
+        }
+        .container__saludo, .container__bienvenidos{
+            font-size: 3rem; 
+        }
+        .container__saludo {
+            position: relative;
+            right: 30%;
+            top: 25px;
+        }
+        .container__bienvenidos {
+            position: relative;
+            left: 37%;
+            top: -25px;
+            width: 70%;
+        }
+        h3 {
+            font-size: 6rem;
+        }
+        &:hover{
+            .container__saludo {
+                transform: scale(1.2)  translate(0, -5px);
+            }
+            .container__bienvenidos {
+                transform: scale(1.2)  translate(-10px, 3px);
             }
         }
-    }  
+    }
+    .sect{
+        padding-top: 3rem;
+    }
+    .none{
+        display: none;
+    }
+    //servicios
+    .cajaflex{
+        p {
+            padding: 1rem;
+        }
+        h3{
+            padding-top: 0;
+            font-size: 10rem;
+        }
+        h4 {
+            text-align: center;
+        }
+    }
+    .bootsSer{
+        justify-content: center;
+        height: 85px;
+    }
+    //proyectos
+    .light-box, .light-box2, .light-box3 {
+        img{
+            width: 80vw;
+        }
+    }
+    //sobremi
+    .titulo__sobremi{
+        font-size: 4.5rem;
+    }
+    .container__sobremi{
+        flex-direction: column;
+        overflow: hidden;
+        .img__sobremi{
+            width: 90%;
+        }
+        .parrafo__About{
+            width: 90%;
+            padding: 1rem 0;
+        }
+        .none{
+            display: none;
+        }
+    }
+    .container__imgForm {
+        margin: 0;
+        padding: 2rem .5rem;
+        &::before{
+            width: 90%;
+        }
+        section{
+            width: 100%;
+        }
+    }
+    .footer {
+        .linksFooter{
+            ul {
+                flex-direction: column;
+            }
+        }
+    }
 }
 @media screen and (max-width: 375px) {
+    @mixin titulos_seccionesR {
+        font-size: 5rem;
+        margin-top: 6rem;
+    }
     nav {
         justify-content: start;
         .logo{
@@ -860,11 +1100,177 @@ legend {
             width: 80%;
         }
     }
-
+    .container__index {
+        height: 150px;
+        &::before {
+            width: 90%;
+        }
+        .container__saludo, .container__bienvenidos{
+            font-size: 2rem; 
+        }
+        .container__saludo {
+            position: relative;
+            right: 30%;
+            top: 15px;
+        }
+        .container__bienvenidos {
+            position: relative;
+            width: 68%;
+            left: 35%;
+            top: -15px;
+        }
+        h3 {
+            font-size: 4.8rem;
+        }
+        &:hover{
+            .container__saludo {
+                transform: scale(1.2)  translate(5px, -10px);
+            }
+            .container__bienvenidos {
+                transform: scale(1.2)  translate(0px, 8px);
+            }
+        }
+    }
+    .bannerServicios, .bannerProyectos, .bannerSobremi, .bannerContacto {
+        background-position: center;
+        height: 400px;
+        .tituloServicios, .tituloProyectos, .titulo__contacto{
+        @include titulos_seccionesR;
+        }
+    }
+    .sect{
+        padding-top: 3rem;
+    }
+    .none{
+        display: none;
+    }
+    //servicios
+    .cajaflex{
+        p {
+            padding: 1rem;
+        }
+        h3{
+            font-size: 7rem;
+            padding-top: 0;
+        }
+        h4 {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+    .bootsSer{
+        justify-content: center;
+        height: 60px;
+    }
+    //proyectos
+    .light-box, .light-box2, .light-box3 {
+        img{
+            width: 80vw;
+        }
+    }
+    //sobremi
+    .titulo__sobremi{
+        font-size: 3rem;
+        padding: 2rem 1rem;
+    }
+    .container__sobremi{
+        flex-direction: column;
+        overflow: hidden;
+        .img__sobremi{
+            width: 90%;
+        }
+        .parrafo__About{
+            width: 90%;
+            padding: 1rem 0;
+        }
+        .none{
+            display: none;
+        }
+    }
+    //contacto
+    .container__titulo {
+        animation-delay: .5s;
+    }
+    .container__imgForm {
+        margin: 0;
+        padding: 2rem .5rem;
+        &::before{
+            width: 90%;
+        }
+        section{
+            width: 100%;
+        }
+    }
+    //footer
     .footer {
         .linksFooter{
             ul {
                 flex-direction: column;
+            }
+        }
+    }
+}
+@media screen and (max-width: 300px) {
+    @mixin titulos_seccionesR {
+        font-size: 3rem;
+        margin-top: 6rem;
+    }
+    nav {
+        justify-content: start;
+        .logo{
+            float: none;
+            width: 80%;
+        }
+    }
+    .container__index {
+        height: 150px;
+        top: 80px;
+        &::before {
+            width: 90%;
+        }
+        .container__saludo, .container__bienvenidos{
+            font-size: 2rem; 
+        }
+        .container__saludo {
+            position: relative;
+            right: 30%;
+            top: 15px;
+        }
+        .container__bienvenidos {
+            position: relative;
+            width: 68%;
+            left: 33%;
+            top: -15px;
+        }
+        h3 {
+            font-size: 4.2rem;
+        }
+        &:hover{
+            .container__saludo {
+                transform: scale(1.2)  translate(-10px, -10px);
+            }
+            .container__bienvenidos {
+                transform: scale(1.2)  translate(4px, 10px);
+            }
+        }
+    }
+    .sect{
+        padding-top: 3rem;
+    }
+    .bannerServicios, .bannerProyectos, .bannerSobremi, .bannerContacto {
+        background-position: center;
+        height: 200px;
+        .tituloServicios, .tituloProyectos, .titulo__contacto{
+        @include titulos_seccionesR;
+        }
+    }
+    .none{
+        display: none;
+    }
+    .footer{
+        .redesSociales{
+            ul{
+                width: 80%;
             }
         }
     }
