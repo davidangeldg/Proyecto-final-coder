@@ -6,28 +6,33 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://davidangeldg.000webhostapp.com/index.html</loc>
-  <lastmod>2020-11-08T02:13:55+00:00</lastmod>
+  <loc>https://davidangeldg.000webhostapp.com/</loc>
+  <lastmod>2020-11-08T20:16:28+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://davidangeldg.000webhostapp.com/index.html</loc>
+  <lastmod>2020-11-08T20:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://davidangeldg.000webhostapp.com/html/servicios.html</loc>
-  <lastmod>2020-11-08T02:13:55+00:00</lastmod>
+  <lastmod>2020-11-08T20:16:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://davidangeldg.000webhostapp.com/html/proyectos.html</loc>
-  <lastmod>2020-11-08T02:13:55+00:00</lastmod>
+  <lastmod>2020-11-08T20:16:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://davidangeldg.000webhostapp.com/html/sobremi.html</loc>
-  <lastmod>2020-11-08T02:13:55+00:00</lastmod>
+  <lastmod>2020-11-08T20:16:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://davidangeldg.000webhostapp.com/html/contacto.html</loc>
-  <lastmod>2020-11-08T02:13:55+00:00</lastmod>
+  <lastmod>2020-11-08T20:16:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
