@@ -6,7 +6,7 @@ David Angel DG - coderhouse
 En este repositorio se encuentra el proycto final del curso "Desarrollo web" de Coder House, el cual es acerca de mi página web-portfolio
 Este sitio fue creado utilizando el principio mobile first, por lo cual es totalmente responsive.
 
-# En la rama master van a encontrar los archivos principales con los que está construido el sitio:
+<strong>En la rama master van a encontrar los archivos principales con los que está construido el sitio:</strong>
 
 1. La carpeta css contiene los archivos que se usaron para crear el estilos de la página.
 2. La carpeta img contiene todas las imagenes .jpg y los iconos svg utilizados en el sitio.
@@ -15,11 +15,13 @@ Este sitio fue creado utilizando el principio mobile first, por lo cual es total
 5. La carpeta wireframes contiene los wireframes de la idea original del sitio.
 6. en el package.jason van a encontrar las dependencias del proyecto como asi también una breve descripción del mismo.
 7. El index.html es su página principal.
-8. Agregué la pagina error 404, que esta habilitada en el host done subí mi sitio(000webhost), modifiqué el archivo .htaccess colocandole al mismo la linea de codigo siguiente:    ErrorDocument 404 /pages/404.html
+8. Agregué la pagina error 404, que esta habilitada en el host done subí mi sitio(000webhost), modifiqué el archivo .htaccess colocandole al mismo la linea de codigo  ErrorDocument 404 /html/404.html
 
 
-Link del sitio en Github Pages:
-<link> : https://github.com/davidangeldg/Proyecto-final-coder
+- Link del sitio en Github Pages:
+https://davidangeldg.github.io/Proyecto-final-coder/
 
-Link del sitio subido al hosting:
-<link> : https://davidangeldg.000webhostapp.com/
+<hr>
+
+- Link del sitio subido al hosting:
+https://davidangeldg.000webhostapp.com/
